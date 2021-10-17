@@ -1,0 +1,27 @@
+  861  pwd
+  862  mkdir unix
+  863  ll
+  864  cd unix
+  865  ll
+  866  touch foo.txt
+  867  ll
+  868  cp foo.txt foo-copy.txt
+  869  mv foo-copy.txt foo2.txt
+  870  mkdir data
+  871  pwd
+  872  mv foo2.txt /home/maty/unix/data
+  873  cd data
+  874  ll
+  875  cd ..
+  876  mkdir new
+  877  pwd
+  878  mv /home/maty/unix/data/foo2.txt /home/maty/unix/new
+  879  mv /home/maty/unix/new/foo2.txt /home/maty/unix
+  880  ll
+  881  mv foo2.txt foo-old.txt
+  882  ll
+  883  rm -f foo-old.txt
+  884  ll
+  885  rm -r new/
+  886  ll
+  887  history >> exo1.txt
